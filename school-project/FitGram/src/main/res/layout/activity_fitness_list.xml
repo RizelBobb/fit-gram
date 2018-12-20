@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FitnessListActivity">
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textview_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_name"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="53dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_decrease"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textview_amount"
+        android:layout_alignBottom="@+id/textview_amount"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toStartOf="@+id/textview_amount"
+        android:layout_toLeftOf="@+id/textview_amount"
+        android:text="-"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/button_increase"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textview_amount"
+        android:layout_alignBottom="@+id/textview_amount"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="-160dp"
+        android:layout_marginRight="-160dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_toEndOf="@+id/textview_amount"
+        android:layout_toRightOf="@+id/textview_amount"
+        android:text="+"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_increase"
+        android:layout_alignBottom="@+id/button_increase"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="-141dp"
+        android:layout_marginRight="-141dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toStartOf="@+id/button_increase"
+        android:layout_toLeftOf="@+id/button_increase"
+        android:text="Add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="369dp"
+        android:layout_height="367dp"
+        android:layout_below="@+id/textview_amount"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
+
+    <Button
+        android:id="@+id/example_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_toStartOf="@+id/button_decrease"
+        android:text="COOL DOWN"
+        android:layout_toLeftOf="@+id/button_decrease" />
+
+</RelativeLayout>

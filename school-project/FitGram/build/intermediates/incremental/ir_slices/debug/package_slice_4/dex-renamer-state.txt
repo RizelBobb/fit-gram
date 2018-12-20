@@ -1,0 +1,4 @@
+#Sun Dec 09 23:09:50 GMT-05:00 2018
+base.0=C\:\\Users\\Resilient\\Downloads\\school-project\\school-project\\FitGram\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex
